@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.9",
 	"appid": "wx281c1c70449a750c",
-	"projectname": "PdChecker-miniprogram",
+	"projectname": "SNChecker",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
