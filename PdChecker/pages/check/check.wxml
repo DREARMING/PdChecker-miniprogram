@@ -1,0 +1,9 @@
+<!--pages/check/check.wxml-->
+<view>
+<form>
+<input type='text' placeholder='输入产品序列号' bindinput='bindSNTextChange'></input>
+<button form-type='submit' bindtap='checkSN'>校验产品真伪</button>
+</form>
+
+<navigator url="{{loginPage}}">后台管理</navigator>
+</view>

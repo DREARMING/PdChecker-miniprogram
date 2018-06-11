@@ -14,6 +14,12 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const isEmpty = function(str) {
+  if (str && str.length > 0) return false;
+  return true;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  isEmpty: isEmpty
 }

@@ -1,14 +1,22 @@
 //app.js
 App({
+
+  globalData: {
+    hasLogin: false,
+    openid: null,
+    code : -1
+  },
+
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
+        this.globalData.code = res.code
+        console.log("code : " + this.globalData.code)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
